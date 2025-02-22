@@ -13,7 +13,7 @@ This folder contains the code for the **Type Ahead Search** mini-project. It imp
 - **`script.js`**: The JavaScript code that implements the search logic and handles the display of matching cities and states.
 
 ## Live Demo
-You can try out the live demo of the project by visiting [this link](#) 
+You can try out the live demo of the project by visiting [this link](https://typeahead-qnlzu4ks2-j-ordanos-projects.vercel.app/) 
 
 ## Screenshot
 Here’s a screenshot of the Type Ahead Search feature in action:
