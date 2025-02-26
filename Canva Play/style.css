@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background: aliceblue ;
+}
+canvas {
+    background-color: aliceblue;
+}
+
+.toolbar {
+    max-width: 1280px;
+    width: auto;
+    height: 60px;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background: #8dbc9294;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(19, 18, 18);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+img {
+    max-width: 100%;
+    width: 35px;
+}
+
+.toolbar div, button {
+    margin: 5px;
+}
+
+.toolbar:hover, button:hover {
+    cursor: pointer;
+}
+
+.clr {
+    height: 31px;
+    width: 31px;
+    min-height: 25px;
+    min-width: 31px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform .5s;
+}
+
+.clr:hover {
+    transform: scale(1.2);
+}
+.clr:focus{
+    transform: scale(1.2);
+    border: 3px solid rgba(86, 80, 80, 0.635);
+}
+
+.clr:nth-child(5) {
+    background-color: #000;
+}
+
+.clr:nth-child(6) {
+    background-color: red;
+}
+
+.clr:nth-child(7) {
+    background-color: yellow;
+}
+
+.clr:nth-child(8) {
+    background-color: blue;
+}
+
+.clr:nth-child(12) {
+    background-color: white;
+}
+
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px); 
+}
+
+button:focus {
+    transform: translateY(-3px);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+}
+
+.brush-range.visible {
+    display: block;
+    position: absolute;
+    top: 70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8dbc9294;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(19, 18, 18);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    width: 50px; 
+}
+
+@media (max-width: 600px) {
+    .clr {
+        display: none;
+    }
+    .brush-range.visible{
+        width: 200px;
+    }
+    .action-btn{
+        display: none;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Canva Play</title>
+  </head>
+  <body>
+    <canvas id="draw"></canvas>
+    <div class="toolbar">
+      <!-- tool selection -->
+      <button id="pencilBtn" class="tool-btn">
+        <img src="assets/pencilC.png" alt="pencil icon" />
+      </button>
+      <button id="penBtn" class="tool-btn">
+        <img src="assets/penC.png" alt="pen icon" />
+      </button>
+      <button id="markerBtn" class="tool-btn">
+        <img src="assets/markerCC.png" alt="marker-pen icon" />
+      </button>
+      <button id="eraserBtn" class="tool-btn">
+        <img src="assets/eraserC.png" alt="eraser icon" />
+      </button>
+
+      <!-- color selection -->
+      <div class="clr" data-clr="#000"></div>
+      <div class="clr" data-clr="red"></div>
+      <div class="clr" data-clr="yellow"></div>
+      <div class="clr" data-clr="blue"></div>
+      <input type="color" class="color-picker" id="colorPicker" />
+      <button id="brushBtn" class="action-btn2">
+        <img src="assets/brushWeight.png" alt="brush Weight icon" />
+      </button>
+      <input
+        id="brushWeight"
+        type="range"
+        min="1"
+        max="20"
+        class="brush-range"
+      />
+
+      <!-- undo, redo, clear and download  -->
+      <button id="undoBtn" class="action-btn">
+        <img src="assets/undoC.png" alt="undo icon" />
+      </button>
+      <button id="redoBtn" class="action-btn">
+        <img src="assets/redoC.png" alt="redo icon" />
+      </button>
+      <button id="clearBtn" class="action-btn">
+        <img src="assets/clear.png" alt="clear icon" />
+      </button>
+      <button id="downloadBtn" class="action-btn">
+        <img src="assets/downloadC.png" alt="download icon" />
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
